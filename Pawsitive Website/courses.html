@@ -1,0 +1,249 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore animal care and pet education courses at Pawsitive Pet Academy.">
+  <title>Our Courses | Pawsitive Pet Academy</title>
+</head>
+
+<body>
+  <div>
+    Learn with care. Grow with confidence. Make every paw matter.
+  </div>
+
+  <header>
+    <a href="index.html">
+      Pawsitive Pet Academy
+      <small>Learn · Care · Inspire</small>
+    </a>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="courses.html" aria-current="page">Courses</a>
+      <a href="fees.html">Fees</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="founder.html">Our Founder</a>
+      <a href="contact.html">Contact</a>
+      <a href="student-registration.html">Register</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <span>Learn With Us</span>
+      <h1>Explore Our Courses</h1>
+      <p>
+        Discover learning topics centred on pets, animal care and
+        responsible ownership. Explore the options below to find
+        a course that interests you.
+      </p>
+    </section>
+
+    <section>
+      <div>
+        <h2>Find Your Learning Path</h2>
+        <p>
+          Browse the sample course categories below. Course names,
+          availability and details can be edited to match the academy's
+          actual offerings.
+        </p>
+      </div>
+
+      <div aria-label="Filter courses">
+        <button class="filter-btn active" data-filter="all" type="button">
+          All Courses
+        </button>
+        <button class="filter-btn" data-filter="care" type="button">
+          Pet Care
+        </button>
+        <button class="filter-btn" data-filter="behaviour" type="button">
+          Behaviour
+        </button>
+        <button class="filter-btn" data-filter="wellness" type="button">
+          Animal Wellness
+        </button>
+      </div>
+
+      <div id="courseGrid">
+        <article class="course-card" data-category="care">
+          <div aria-hidden="true">🐕</div>
+          <div>
+            <div>Pet Care</div>
+            <h3>Introduction to Pet Care</h3>
+            <p>
+              Explore everyday pet-care responsibilities, basic needs,
+              hygiene, feeding routines and safe handling.
+            </p>
+            <div>
+              <span>Beginner</span>
+              <span>Care Basics</span>
+            </div>
+            <a href="individual-course.html">View Course</a>
+          </div>
+        </article>
+
+        <article class="course-card" data-category="behaviour">
+          <div aria-hidden="true">🐾</div>
+          <div>
+            <div>Behaviour</div>
+            <h3>Understanding Pet Behaviour</h3>
+            <p>
+              Learn about animal communication, common behaviours,
+              positive interactions and responsible approaches to training.
+            </p>
+            <div>
+              <span>Learning Basics</span>
+              <span>Behaviour</span>
+            </div>
+            <a href="individual-course.html">View Course</a>
+          </div>
+        </article>
+
+        <article class="course-card" data-category="wellness">
+          <div aria-hidden="true">❤️</div>
+          <div>
+            <div>Animal Wellness</div>
+            <h3>Pet Health and Wellbeing</h3>
+            <p>
+              Explore general wellbeing, recognising changes in a pet's
+              condition and the importance of appropriate veterinary care.
+            </p>
+            <div>
+              <span>Wellbeing</span>
+              <span>Welfare</span>
+            </div>
+            <a href="individual-course.html">View Course</a>
+          </div>
+        </article>
+
+        <article class="course-card" data-category="care">
+          <div aria-hidden="true">🐈</div>
+          <div>
+            <div>Pet Care</div>
+            <h3>Responsible Pet Ownership</h3>
+            <p>
+              Learn about the long-term responsibilities of owning a pet,
+              including suitable environments, daily care and planning.
+            </p>
+            <div>
+              <span>Pet Owners</span>
+              <span>Responsibilities</span>
+            </div>
+            <a href="individual-course.html">View Course</a>
+          </div>
+        </article>
+
+        <article class="course-card" data-category="behaviour">
+          <div aria-hidden="true">🎓</div>
+          <div>
+            <div>Behaviour</div>
+            <h3>Positive Training Foundations</h3>
+            <p>
+              Explore reward-based learning principles, consistency,
+              patience and positive interactions with companion animals.
+            </p>
+            <div>
+              <span>Foundations</span>
+              <span>Training</span>
+            </div>
+            <a href="individual-course.html">View Course</a>
+          </div>
+        </article>
+
+        <article class="course-card" data-category="wellness">
+          <div aria-hidden="true">🌿</div>
+          <div>
+            <div>Animal Wellness</div>
+            <h3>Animal Welfare Awareness</h3>
+            <p>
+              Discover the importance of humane treatment, suitable
+              living conditions and awareness of animal welfare needs.
+            </p>
+            <div>
+              <span>Awareness</span>
+              <span>Welfare</span>
+            </div>
+            <a href="individual-course.html">View Course</a>
+          </div>
+        </article>
+      </div>
+
+      <p id="emptyMessage" hidden>
+        No courses are listed in this category yet.
+      </p>
+
+      <div>
+        <strong>Please note:</strong> These are sample course listings
+        for the website layout, not a verified official course catalogue.
+        Confirm course names, accreditation, duration, entry requirements
+        and availability before publishing.
+      </div>
+    </section>
+
+    <section>
+      <h2>Found a Course That Interests You?</h2>
+      <p>
+        Visit the registration page to express your interest, or check
+        the fees page for course-cost information.
+      </p>
+      <a href="student-registration.html">Register Your Interest</a>
+      <a href="fees.html">View Fees</a>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <strong>Pawsitive Pet Academy</strong>
+      <p>Learn · Care · Inspire</p>
+      <p>© <span id="year"></span> Pawsitive Pet Academy.</p>
+    </div>
+
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="course-schedule.html">Schedule</a>
+      <a href="founder.html">Our Founder</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const courseCards = document.querySelectorAll(".course-card");
+    const emptyMessage = document.getElementById("emptyMessage");
+
+    filterButtons.forEach(function(button) {
+      button.addEventListener("click", function() {
+        const filter = button.dataset.filter;
+        let visibleCount = 0;
+
+        filterButtons.forEach(function(item) {
+          item.classList.remove("active");
+        });
+
+        button.classList.add("active");
+
+        courseCards.forEach(function(card) {
+          const matches =
+            filter === "all" || card.dataset.category === filter;
+
+          card.hidden = !matches;
+
+          if (matches) {
+            visibleCount++;
+          }
+        });
+
+        emptyMessage.hidden = visibleCount !== 0;
+      });
+    });
+  </script>
+</body>
+</html>
+```

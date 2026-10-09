@@ -1,0 +1,263 @@
+\```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration | Learning Hub</title>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <h2>Learning Hub</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="courses.html">Courses</a>
+            <a href="course-schedule.html">Schedule</a>
+            <a href="student-registration.html">Register</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <h1>Student Registration</h1>
+        <p>Take the first step towards your learning journey.</p>
+    </section>
+
+    <!-- Registration Form -->
+    <main class="container">
+
+        <div class="form-card">
+            <h2>Register as a Student</h2>
+
+            <p class="description">
+                Complete the form below to submit your registration enquiry.
+                Fields marked with * are required.
+            </p>
+
+            <form id="registrationForm">
+
+                <h3 class="form-section">Personal Information</h3>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="firstName">First Name *</label>
+                        <input type="text" id="firstName"
+                               name="firstName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Last Name *</label>
+                        <input type="text" id="lastName"
+                               name="lastName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dob">Date of Birth *</label>
+                        <input type="date" id="dob"
+                               name="dob" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="gender">
+                            <option value="">Select an option</option>
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                            <option value="other">Other</option>
+                            <option value="prefer-not-to-say">
+                                Prefer not to say
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email"
+                               name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone"
+                               name="phone" placeholder="e.g. 0712345678"
+                               required>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="address">Residential Address *</label>
+                        <input type="text" id="address"
+                               name="address" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="city">Town / City *</label>
+                        <input type="text" id="city"
+                               name="city" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="province">Province *</label>
+                        <select id="province" name="province" required>
+                            <option value="">Select province</option>
+                            <option>Eastern Cape</option>
+                            <option>Free State</option>
+                            <option>Gauteng</option>
+                            <option>KwaZulu-Natal</option>
+                            <option>Limpopo</option>
+                            <option>Mpumalanga</option>
+                            <option>North West</option>
+                            <option>Northern Cape</option>
+                            <option>Western Cape</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <h3 class="form-section">Course Information</h3>
+
+                <div class="form-grid">
+
+                    <div class="form-group full-width">
+                        <label for="course">Choose Your Course *</label>
+                        <select id="course" name="course" required>
+                            <option value="">Select a course</option>
+                            <option value="web-development">
+                                Web Development
+                            </option>
+                            <option value="digital-marketing">
+                                Digital Marketing
+                            </option>
+                            <option value="computer-skills">
+                                Computer Skills
+                            </option>
+                            <option value="other">
+                                Other / Not Listed
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="studyMode">Study Mode *</label>
+                        <select id="studyMode" name="studyMode" required>
+                            <option value="">Select study mode</option>
+                            <option value="online">Online</option>
+                            <option value="in-person">In-person</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="startDate">Preferred Start Date</label>
+                        <input type="date" id="startDate"
+                               name="startDate">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="education">Highest Education Level</label>
+                        <select id="education" name="education">
+                            <option value="">Select education level</option>
+                            <option>Below Grade 12</option>
+                            <option>Grade 12 / Matric</option>
+                            <option>Certificate</option>
+                            <option>Diploma</option>
+                            <option>Degree</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="studentType">Student Type</label>
+                        <select id="studentType" name="studentType">
+                            <option value="">Select an option</option>
+                            <option value="new">New Student</option>
+                            <option value="returning">Returning Student</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="reason">Why do you want to join?</label>
+                        <textarea id="reason" name="reason"
+                            placeholder="Tell us about your learning goals..."></textarea>
+                    </div>
+
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="consent"
+                           name="consent" required>
+
+                    <label for="consent">
+                        I confirm that the information I have provided
+                        is accurate and consent to being contacted about
+                        my registration. *
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    Submit Registration
+                </button>
+
+                <div id="successMessage" role="status"
+                     aria-live="polite">
+                    Your form has been checked successfully. This demo
+                    does not send your information to the school.
+                    Please contact the administrator to complete registration.
+                </div>
+
+                <div class="notice">
+                    <strong>Important:</strong> Submitting this form does
+                    not guarantee admission. Your registration must be
+                    confirmed by the Learning Hub team.
+                </div>
+
+            </form>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Learning Hub. All rights reserved.</p>
+        <p>Empowering learners through education and technology.</p>
+    </footer>
+
+    <script>
+        const form = document.getElementById("registrationForm");
+        const successMessage = document.getElementById("successMessage");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            if (!form.checkValidity()) {
+                form.reportValidity();
+                return;
+            }
+
+            successMessage.style.display = "block";
+            successMessage.scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+            });
+        });
+
+        // Prevent selection of past dates for the preferred start date.
+        const today = new Date();
+        const localToday = new Date(
+            today.getTime() - today.getTimezoneOffset() * 60000
+        ).toISOString().split("T")[0];
+
+        document.getElementById("startDate").min = localToday;
+
+        // A student cannot select a future date of birth.
+        document.getElementById("dob").max = localToday;
+    </script>
+
+</body>
+</html>
+```
